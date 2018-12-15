@@ -1,3 +1,3 @@
 Hello, Git
 Hello, again
-Updating REAME with new information
+Updating README with new information
