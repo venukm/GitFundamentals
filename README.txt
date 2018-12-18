@@ -5,3 +5,4 @@ Adding this line from a different location
 Confirm from another location
 Sharing is fun and easy
 Feature2
+Feature2 changes
