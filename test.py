@@ -1,2 +1,2 @@
-msg = "Hello, Guru!"
-print(msg)
+def sayHello():
+    print("Hello, World!")
