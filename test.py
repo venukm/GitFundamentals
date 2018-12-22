@@ -1,16 +1,7 @@
-def main():
-        employee = {
-                "name": "Venu",
-                "employee_id": "10624098",
-                "feedback": "none"
-        }
-
-        try:
-                last_name = employee["last_name"]
-        except KeyError:
-                print("Error finding last_name")
-        
-        print("This code executes!")
+def main(**kwargs):
+        print("Number of arguments passed : {0}".format(len(kwargs)))
+        print("Type of arguments : {0}".format(type(kwargs)))
+        print("Contents of arguments:\n{0}".format(kwargs))
 
 if __name__ == "__main__":
-    main()
+    main(first_name = "Venu", last_name = "Kottooru", employee_id = "106224098")
