@@ -15,7 +15,7 @@ def display_board(board):
         if (val + 1) % 3 == 0:
             print('\n')
 
-# Determin win status
+# Determine win status
 def win_status(board):
     
     validate_board(board)
@@ -53,12 +53,14 @@ print('Your symbol is o')
 t_board = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 player_turn = 0
-player_symbol = 'x'
-available_positions = [i for i in t_board if i not in ['x', 'o']]
+player_symbol = None
+available_positions = None
 
 while True:
     display_board(t_board)
 
+    available_positions = [i for i in t_board if i not in ['x', 'o']]
+    
     if len(available_positions) == 0:
         print("Game Over! Draw!")
         break
@@ -87,4 +89,4 @@ while True:
         break
 
     player_turn += 1
-    available_positions = [i for i in t_board if i not in ['x', 'o']]
+    
