@@ -5,7 +5,7 @@ class Student():
         self.name = Name(first_name, middle_name, last_name)
         self.student_id = student_id
 
-test_student = Student(1, 'Venu', 'Madhav', 'Kottooru')
+test_student = Student(1, 'Jane', 'Cary', 'Doe')
 
 print(test_student.name.first_name)
 
